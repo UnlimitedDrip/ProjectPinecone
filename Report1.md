@@ -9,11 +9,13 @@ Each member reports on their activities since the last meeting. Remember that co
 ## 2. Project retrospective
 In each meeting, you should spend a few minutes discussing how the group is functioning. What aspects of the group dynamics contribute to the success of the project? In addition, raise any issues—best done directly but with humor and kindness—that you believe are interfering with the effectiveness of the group and your ability to complete the project on time.
 The project retrospective is an opportunity for the group and each individual to reflect on their experience with the project and improve the way the group works together. Make at least five lists:
-1.Appreciations: Everyone coordinated the meeting efficiently
+
+1.Appreciations: Everyone coordinated the meeting efficiently<br>
 2.Successes: Everyone showed up, we all seem on same page
 3.Failures: We lost a teammate before our first meeting.
 4.Barriers: Adjust to smaller team size, one late teammate
 5.What we can do better: N/A
+
 If you don’t have anything to report in one of these lists, just state it.
 A common practice among software teams is to use sticky notes (one color for each category), which each team member uses to write down their ideas for each category (one idea per sticky). As people post their stickies on the whiteboard, the facilitator should group similar or duplicate ideas together. This way the idea becomes decoupled from the person who introduced it. Discuss your ideas briefly as a team.
 
@@ -67,12 +69,14 @@ However, it is important to try to work out the problems inside the group first.
 https://www.cefns.nau.edu/~edo/Classes/CS_Capstone/Docs/Coping-With-Hitchhikers-and-Couch-Potatoes-on-Teams.pdf
 Finally, remember that the actual contribution of each member toward each deliverable of the project should be reported (see the explanation about the deliverable format and submission on Canvas) and that peer evaluation has a significant impact in your grading. Please, don’t let your team down!
 Project idea: Now it is time to discuss project ideas and scope. Read again the part of the Team Project Instructions document about the project idea and size. After deliberating in the group, add in the project minutes a short description of what your product is going to be and what the main proposed functionalities are. 
+
 ***Reduce the number of tabs needed to be open when registering for classes***
 ***-Rate my professor statistics, previous class data, etc.***
 ***-Class Requirements***
 ***-See your own Academic Progress***
 
 Some remarks about the project scope: I would like to remind you that the focus of our course is on software engineering techniques, so the project does not need to be technologically sophisticated (e.g., dealing with large volumes of data, adopting cutting-edge technology, etc.). You don’t want to spend most of your time trying to figure out how to accomplish the implementation itself or learning a new framework or programming language. Just manage the risks. The more important aspect of the project is that it must be valuable for someone. The most common choices for this course are mobile apps and web systems. I don’t want you to finish the course and say “hey, this is a proof of concept that shows that this technology works,” I prefer “hey, this is a prototype of a product that has value for someone and that is well-designed for future evolution.” Of course, it is very hard to come up with an idea for a helpful product out of the blue. Don’t worry, you can change your mind or pivot over the semester. We will have classes to discuss how to determine if your idea is worth pursuing. 
+
 ***Browser: Firefox (& Chrome if in scale)***
 ***Product: Web Extension for Louie***
 ***Objectives:***
