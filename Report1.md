@@ -46,6 +46,7 @@ In this first meeting, you have many things to decide. The agenda should have at
 Define the schedule of the meetings: You should have weekly meetings starting in the 2nd week of classes until the week before the reading week (see the Course Schedule on Canvas). No meetings are required during the Spring break, if we have one. In total, you need to plan 13 meetings. For each meeting, define who will be responsible for each role. Remember, all decisions should be registered in the meeting minutes. 
 
 ***Review what we did in the past week, discuss issues we encountered, than discuss our plans for the next week.***<br>
+
 Decision-making process: Discuss how you are going to deal with disagreements on design choices. E.g.: “We will make decisions by unanimous agreement" sounds nice, but a "2/3 majority" may be more helpful in moving things along. 
 
 ***75% majority for decision making***<br>
