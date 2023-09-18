@@ -32,7 +32,7 @@ Representative quotes:
 “Having more information about who your major specific professors are, is really important to me” 
 Assessment: Nice to have.
 
-###Interview 4:
+### Interview 4:
 Who was Interviewed: A Computer Science student named Zach
 When: 9/14/23 at 12:50pm
 Customer segment: Any NAU Student
