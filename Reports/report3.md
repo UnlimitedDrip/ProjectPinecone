@@ -1,11 +1,11 @@
 # **Report for Week 3 Meeting**
-Group 6: Project Pine cone
-Date and location: 9/22/23, Discord
-Present participants: Aaron (Minute Taker), Daniel Minichetti (Manager), Sergio Rabadan (Presenter), TJ Rhode (Quality assurance)
-Missing participants: N/A
-Project repo: https://github.com/UnlimitedDrip/ProjectPinecone
+**Group 6:** Project Pine cone<br>
+Date and location: 9/22/23, Discord<br>
+Present participants: Aaron (Minute Taker), Daniel Minichetti (Manager), Sergio Rabadan (Presenter), TJ Rhode (Quality assurance)<br>
+Missing participants: N/A<br>
+Project repo: https://github.com/UnlimitedDrip/ProjectPinecone<br>
 ## **1. Summary of activities**
-Each member reports on their activities since the last meeting. Remember that coding activity is expected every week. 
+Each member reports on their activities since the last meeting. Remember that coding activity is expected every week. <br>
 **Aaron:** I created a list of the features we would like to have for the extension and separated them into Main and Side Features.<br>
 **Sergio:** Designed the Logo for the extension and began to consider some features that might be necessary for the project.<br>
 **Daniel:** I started work on some basic UI design. I first drafted up how I wanted the interface to look in Paint, and then I created a very early prototype by programming a browser extension in Firefox using HTML, JS, and CSS. My goal was to just get an idea of how the layout would look in a browser window and what size the buttons should look like. I wanted to have a tab for each feature in the extension, one for professor ratings, class data, and a main page. <br>
