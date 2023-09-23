@@ -1,9 +1,9 @@
 # **Report for Week 3 Meeting**
 **Group 6:** Project Pine cone<br>
-Date and location: 9/22/23, Discord<br>
-Present participants: Aaron (Minute Taker), Daniel Minichetti (Manager), Sergio Rabadan (Presenter), TJ Rhode (Quality assurance)<br>
-Missing participants: N/A<br>
-Project repo: https://github.com/UnlimitedDrip/ProjectPinecone<br>
+**Date and location:** 9/22/23, Discord<br>
+**Present participants:** Aaron (Minute Taker), Daniel Minichetti (Manager), Sergio Rabadan (Presenter), TJ Rhode (Quality assurance)<br>
+**Missing participants:** N/A<br>
+**Project repo: https:**//github.com/UnlimitedDrip/ProjectPinecone<br>
 ## **1. Summary of activities**
 Each member reports on their activities since the last meeting. Remember that coding activity is expected every week. <br>
 **Aaron:** I created a list of the features we would like to have for the extension and separated them into Main and Side Features.<br>
