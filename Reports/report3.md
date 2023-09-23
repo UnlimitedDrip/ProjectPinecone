@@ -13,10 +13,10 @@ Each member reports on their activities since the last meeting. Remember that co
 ## **2. Project retrospective**
 In each meeting, you should spend a few minutes discussing how the group is functioning. What aspects of the group dynamics contribute to the success of the project? In addition, raise any issues—best done directly but with humor and kindness—that you believe are interfering with the effectiveness of the group and your ability to complete the project on time.<br>
 The project retrospective is an opportunity for the group and each individual to reflect on their experience with the project and improve the way the group works together. Make at least five lists:<br>
-**Appreciations:**<br>
+**Appreciations:** <br>
 Aaron (Has to remain like this for all the reports)
  Perfect attendance<br>
-**Successes:**<br>
+**Successes:** <br>
 -Good effort and research towards UI design<br>
 -Logo came out fantastic<br>
 **Failures:** (what did not go well)<br>
@@ -28,12 +28,12 @@ Aaron (Has to remain like this for all the reports)
 **What we should try next time:** <br>
 -Take more vitamin C<br>
 -Move meetings later in the evening (5 PM)<br>
-**Ideas:**<br>
+**Ideas:** <br>
 -Split team into UI and Backend<br>
 -Every member produces a sketch of different features<br>
 -Come up with designs for the facade of the extension<br>
 **Features** <br>
-***Mains:***<br>
+***Mains:*** <br>
 -Display ratings for professor<br>
 -Requirements for degree<br>
 -Displays previous semesters class data<br>
