@@ -14,7 +14,7 @@ Each member reports on their activities since the last meeting. Remember that co
 In each meeting, you should spend a few minutes discussing how the group is functioning. What aspects of the group dynamics contribute to the success of the project? In addition, raise any issues—best done directly but with humor and kindness—that you believe are interfering with the effectiveness of the group and your ability to complete the project on time.<br>
 The project retrospective is an opportunity for the group and each individual to reflect on their experience with the project and improve the way the group works together. Make at least five lists:<br>
 **Appreciations:** <br>
-Aaron (Has to remain like this for all the reports)<br>
+-Aaron (Has to remain like this for all the reports)<br>
 -Perfect attendance<br>
 **Successes:** <br>
 -Good effort and research towards UI design<br>
