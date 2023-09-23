@@ -16,10 +16,10 @@ The project retrospective is an opportunity for the group and each individual to
 **Appreciations:** <br>
 - Aaron (Has to remain like this for all the reports)<br>
 - Perfect attendance<br>
-**Successes:** <br>
+**Successes:** 
 - Good effort and research towards UI design<br>
 - Logo came out fantastic<br>
-**Failures:** (what did not go well)<br>
+**Failures:** (what did not go well)
 - Two team members got sick<br>
 - Not all tasks got done before meeting<br>
 **Barriers:** <br>
