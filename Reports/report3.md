@@ -25,7 +25,7 @@ Aaron (Has to remain like this for all the reports)
 **Barriers:** <br>
 -Mortality<br>
 -Other Class coursework & work<br>
-**What we should try next time: ** <br>
+**What we should try next time:** <br>
 -Take more vitamin C<br>
 -Move meetings later in the evening (5 PM)<br>
 **Ideas:**<br>
@@ -34,16 +34,16 @@ Aaron (Has to remain like this for all the reports)
 -Come up with designs for the facade of the extension<br>
 **Features** <br>
 ***Mains:***<br>
-Display ratings for professor
-Requirements for degree
-Displays previous semesters class data
-***Side:***
-Allows you to see your schedule
-Export into a calendar file
-## **3. Next steps**
-Think about what needs to be done and assign tasks. Update your activity tracker with new tasks, actual hours spent in the activities, corresponding GitHub issues, and the status of the work.
-**Things that need to be done:**
-Update activity tracker for next week 
-Sketch up features UI
-Ask for feedback from professor regarding development schedule
+-Display ratings for professor<br>
+-Requirements for degree<br>
+-Displays previous semesters class data<br>
+***Side:***<br>
+-Allows you to see your schedule<br>
+-Export into a calendar file<br>
+## **3. Next steps**<br>
+-Think about what needs to be done and assign tasks. Update your activity tracker with new tasks, actual hours spent in the activities, corresponding GitHub issues, and the status of the work.<br>
+**Things that need to be done:**<br>
+-Update activity tracker for next week<br> 
+-Sketch up features UI<br>
+-Ask for feedback from professor regarding development schedule
  
