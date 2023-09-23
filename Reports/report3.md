@@ -32,7 +32,7 @@ Aaron (Has to remain like this for all the reports)
 -Split team into UI and Backend<br>
 -Every member produces a sketch of different features<br>
 -Come up with designs for the facade of the extension<br>
-**Features** <br>
+**Features:** <br>
 ***Mains:*** <br>
 -Display ratings for professor<br>
 -Requirements for degree<br>
