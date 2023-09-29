@@ -33,5 +33,27 @@ Exportability of Class schedule to use in other software programs
 ## 5. Minimum Viable Product
 
 - **Display the required classes to fulfill the user's degree program along with the user's current data.**<br>
+
+## 6. Use cases<br>
+UML Use Case Diagram:<br>
+![Use Cases](/assets/UseCases.png)
+
+Use Cases: 
+1. User can see the professor’s rating without leaving LOUIE
+2. User opens the extension to quickly see their semester’s class schedule
+3. User loads onto class cart page and the extension and shows which fulfills their requirements.
+4. User clicks on the extension to export their class schedule into google calendar<br>
+
+User Story 1:<br>
+![user Story 1](/assets/USt1.png)
  
+User Story 2:<br>
+![user Story 2](/assets/USt2.png)
+
+User Story 3:<br>
+![user Story 3](/assets/USt3.png)
+
+User Story 4:Export is at bottom of schedule page
+<br>
+![user Story 4](/assets/USt2.png)
 
