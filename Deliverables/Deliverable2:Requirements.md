@@ -28,5 +28,10 @@ Lets user see their current semester class schedule
 - **Goal:** Pop up will have a schedule visible to users when the icon is clicked on.<br><br>
 Exportability of Class schedule to use in other software programs
 - **Requirements:** Browser, internet connection, logged into LOUIE, mouse
-- **Goal:** Allows users to export their schedule into .ics file when they click the export button. 
+- **Goal:** Allows users to export their schedule into .ics file when they click the export button.
+
+## 5. Minimum Viable Product
+
+- **Display the required classes to fulfill the user's degree program along with the user's current data.**<br>
+ 
 
