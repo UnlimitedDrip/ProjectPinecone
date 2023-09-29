@@ -21,3 +21,12 @@ Consumer segment: NAU college students who enroll in classes using LOUIE.
 2. Displays previous semesters class data<br>
 3. Lets you know what requirements each class fulfills in your degree program<br>
 
+## 4. Non-functional requirements
+**Side:**<br>
+Lets user see their current semester class schedule
+- **Requirements:** Browser, internet connection, logged into LOUIE, mouse
+- **Goal:** Pop up will have a schedule visible to users when the icon is clicked on.
+Exportability of Class schedule to use in other software programs
+- **Requirements:** Browser, internet connection, logged into LOUIE, mouse
+- **Goal:** Allows users to export their schedule into .ics file when they click the export button. 
+
