@@ -58,11 +58,11 @@ User Story 4:Export is at bottom of schedule page
 ![user Story 4](/docs/USt2.png)
 
 ## 7. User stories
-1. As a student, I want to be able to see the professor’s rating to consider if I should take the class with one professor or another. 5 Min
-2. As a student, I want to be able to see how necessary a class is for me so that I can change it if needed. 10 Min
-3. As a student, I want to get all my information when signing up for classes in one tab, so I can keep my browser clear of multiple tabs and save memory 3 Min
-4. As a student, I want to be able to see the class’ difficulty level, so that I can reconsider taking this class later with a more balanced schedule. 10 Min
-5. As a student, being able to export the times of all my classes into a calendar app helps me better plan and visualize my schedule week by week so that I can remain organized 15 min
-6. As a student who cares about the professor, I want to see what other people who have previously had a professor say about certain qualities or traits that the professor has, so I know if they will assist me to be more successful. Depends on the amount of comments the user reads.
-7. As a student who really likes getting A’s in classes, I want to be able to see what the average percentage of students who have taken the class previously have gotten an A, so I can prepare and gauge how much effort will be required to accomplish this task 10 Min
-8. As a student who enjoys taking easier classes, I want to be able to see what required classes are the easiest, so I can have a comfortable semester, and know I’m taking the classes that have a high success rate. 2 Min
+1. As a student, I want to be able to see the professor’s rating to consider if I should take the class with one professor or another. **5 Min**
+2. As a student, I want to be able to see how necessary a class is for me so that I can change it if needed. **10 Min**
+3. As a student, I want to get all my information when signing up for classes in one tab, so I can keep my browser clear of multiple tabs and save memory **3 Min**
+4. As a student, I want to be able to see the class’ difficulty level, so that I can reconsider taking this class later with a more balanced schedule. **10 Min**
+5. As a student, being able to export the times of all my classes into a calendar app helps me better plan and visualize my schedule week by week so that I can remain organized **15 min**
+6. As a student who cares about the professor, I want to see what other people who have previously had a professor say about certain qualities or traits that the professor has, so I know if they will assist me to be more successful. **Depends on the amount of comments the user reads.**
+7. As a student who really likes getting A’s in classes, I want to be able to see what the average percentage of students who have taken the class previously have gotten an A, so I can prepare and gauge how much effort will be required to accomplish this task **10 Min**
+8. As a student who enjoys taking easier classes, I want to be able to see what required classes are the easiest, so I can have a comfortable semester, and know I’m taking the classes that have a high success rate. **2 Min**
