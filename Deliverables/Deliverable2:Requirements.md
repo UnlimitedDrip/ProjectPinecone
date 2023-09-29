@@ -11,3 +11,6 @@ Report the value propositions and customer segments of your product. Make sure t
 Value Proposition: The Pinecone extension is a web extension {(i) what your product is} that allows NAU college students {(ii) target customers} to make better use of their time {(iii) the value your product provides}, making informed decisions when enrolling in classes, so they can avoid hardship through the semester{(iv) why your product is unique}. 
 
 Consumer segment: NAU college students who enroll in classes using LOUIE. 
+
+## 2. Stakeholders
+- NAU students: Our primary client will use our extension for a more optimized and informed experience.<br>
