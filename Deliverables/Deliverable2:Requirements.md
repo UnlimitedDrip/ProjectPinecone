@@ -36,7 +36,7 @@ Exportability of Class schedule to use in other software programs
 
 ## 6. Use cases<br>
 UML Use Case Diagram:<br>
-![Use Cases](/assets/UseCases.png)
+![Use Cases](/docs/UseCases.png)
 
 Use Cases: 
 1. User can see the professor’s rating without leaving LOUIE
@@ -45,13 +45,13 @@ Use Cases:
 4. User clicks on the extension to export their class schedule into google calendar<br>
 
 User Story 1:<br>
-![user Story 1](/assets/USt1.png)
+![user Story 1](/docs/USt1.png)
  
 User Story 2:<br>
-![user Story 2](/assets/USt2.png)
+![user Story 2](/docs/USt2.png)
 
 User Story 3:<br>
-![user Story 3](/assets/USt3.png)
+![user Story 3](/docs/USt3.png)
 
 User Story 4:Export is at bottom of schedule page
 <br>
