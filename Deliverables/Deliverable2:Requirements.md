@@ -55,5 +55,5 @@ User Story 3:<br>
 
 User Story 4:Export is at bottom of schedule page
 <br>
-![user Story 4](/assets/USt2.png)
+![user Story 4](/docs/USt2.png)
 
