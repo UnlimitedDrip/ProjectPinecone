@@ -14,3 +14,10 @@ Consumer segment: NAU college students who enroll in classes using LOUIE.
 
 ## 2. Stakeholders
 - **NAU students:** Our primary client will use our extension for a more optimized and informed experience.<br>
+
+## 3. Functional requirements (features)
+**Main Features:**
+Displays RMP ratings for each professor<br>
+Displays previous semesters class data<br>
+Lets you know what requirements each class fulfills in your degree program<br>
+
