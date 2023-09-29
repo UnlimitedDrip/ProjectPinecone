@@ -13,4 +13,4 @@ Value Proposition: The Pinecone extension is a web extension {(i) what your prod
 Consumer segment: NAU college students who enroll in classes using LOUIE. 
 
 ## 2. Stakeholders
-- NAU students: Our primary client will use our extension for a more optimized and informed experience.<br>
+- **NAU students:** Our primary client will use our extension for a more optimized and informed experience.<br>
