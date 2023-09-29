@@ -17,7 +17,7 @@ Consumer segment: NAU college students who enroll in classes using LOUIE.
 
 ## 3. Functional requirements (features)
 **Main Features:**<br>
-1.Displays RMP ratings for each professor<br>
-2.Displays previous semesters class data<br>
-3.Lets you know what requirements each class fulfills in your degree program<br>
+1. Displays RMP ratings for each professor<br>
+2. Displays previous semesters class data<br>
+3. Lets you know what requirements each class fulfills in your degree program<br>
 
