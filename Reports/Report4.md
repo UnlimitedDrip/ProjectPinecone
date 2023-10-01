@@ -25,7 +25,7 @@ Lack of understanding on certain directions in Deliverable 2<br>
 **Barriers:** <br> 
 Navigating and still getting the hang of github tools (cringe)
 Other Class coursework & work<br> 
-**What we should try next time: ** <br> 
+**What we should try next time:** <br> 
 N/A<br> 
 
 ## **3. Next steps**<br> 
