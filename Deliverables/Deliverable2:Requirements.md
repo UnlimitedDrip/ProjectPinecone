@@ -70,8 +70,7 @@ User Story 4:Export is at bottom of schedule page
 ## 8. Issue Tracker
 The user stories should be registered in your GitHub issue tracker. Include here the link for your issue tracker and a screenshot of what you did. 
 Grading criteria (1 point): Provide the URL and screenshot of the issue tracker. The user stories should be registered there. <br>
-Issue tracker:
+Issue tracker: <br>
 ![issue_tracker](/docs/cs368-deliverable2-issues-tracker.PNG)
-
 
 https://github.com/UnlimitedDrip/ProjectPinecone/blob/main/docs/cs368-deliverable2-issues-tracker.PNG
