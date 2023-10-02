@@ -66,3 +66,9 @@ User Story 4:Export is at bottom of schedule page
 6. As a student who cares about the professor, I want to see what other people who have previously had a professor say about certain qualities or traits that the professor has, so I know if they will assist me to be more successful. **Depends on the amount of comments the user reads.**
 7. As a student who really likes getting A’s in classes, I want to be able to see what the average percentage of students who have taken the class previously have gotten an A, so I can prepare and gauge how much effort will be required to accomplish this task **10 Min**
 8. As a student who enjoys taking easier classes, I want to be able to see what required classes are the easiest, so I can have a comfortable semester, and know I’m taking the classes that have a high success rate. **2 Min**
+
+## 8. Issue Tracker
+The user stories should be registered in your GitHub issue tracker. Include here the link for your issue tracker and a screenshot of what you did. 
+Grading criteria (1 point): Provide the URL and screenshot of the issue tracker. The user stories should be registered there.
+![issue_tracker](docs/cs368-deliverable2-issues-tracker.PNG)
+https://github.com/UnlimitedDrip/ProjectPinecone/blob/main/docs/cs368-deliverable2-issues-tracker.PNG
