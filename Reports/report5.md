@@ -1,9 +1,9 @@
 # **Report for Week 5 Meeting**
-Group 6: Project Pinecone
-Date and location: 10/6/23, Discord
-Present participants: Aaron (presenter), Daniel (quality assurance), Sergio Rabadan(minute keeper), TJ Rhode (Manager)
-Missing participants: N/A
-Project repo: https://github.com/UnlimitedDrip/ProjectPinecone
+Group 6: Project Pinecone<br>
+Date and location: 10/6/23, Discord<br>
+Present participants: Aaron (presenter), Daniel (quality assurance), Sergio Rabadan(minute keeper), TJ Rhode (Manager)<br>
+Missing participants: N/A<br>
+Project repo: https://github.com/UnlimitedDrip/ProjectPinecone<br>
 ## **1. Summary of activities**
 - **Aaron -** Spoke with the professor, reevaluated what the project could be, researched some designs. 
 - **Daniel -** communicated project ideas with the professor, brainstormed new potential project ideas within the scope of our original idea.
