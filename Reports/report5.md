@@ -15,3 +15,12 @@ Project repo: https://github.com/UnlimitedDrip/ProjectPinecone<br>
 - **Failures:** The group was unaware of the intricacies of the original project, so we had to give up on it. 
 - **Barriers:** ignorance in regard to extensions, lack of experience with web scraping. 
 - **What we should try next time:** doing more research on the project we planned on doing and getting feedback from the professor quicker. 
+## **3. Next steps**
+1. Gather Data to Fill database aspect of project with
+      -   Data Consisting of previous semester’s stats
+             -  Start with CS, expand to rest of Engineering
+      -   Rate My Professor Ratings
+             -  Start with CS, expand to rest of engineering
+2. Research and decide which languages/architectures we would like to use for backend and frontend.
+3. Discuss and decide where to host our website
+4. Find the best place to implement a file-server infrastructure
