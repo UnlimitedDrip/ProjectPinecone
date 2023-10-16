@@ -8,5 +8,5 @@ Our web-based scheduling system, known as **Project Pinecone**, allocates itself
 
 **Pinecone** is a massive step towards improving the **scheduling process** at **NAU**, offering a solution that is intuitive for **students, professors, advisors**_,_ and **administrators**, catering to their individual needs. **Pinecone** is committed to aligning with the university’s policies and compliance requirements to ensure security and stability. For **students** who must **_enroll_** in new **classes**, it informs them about the **professor** they will be having and **_shares_** with them the **class distribution data** from the previous **_term_**, so they can see how other students fared. The application also lets them know what **requirements** each **class** fulfills in their **degree program**. For convenience, it automatically creates a **schedule**, so they can see a visual guide to their upcoming **term**, and it can inform them of **scheduling conflicts**, which are not shown in **_LOUIE_** until you **_hit enroll_**.
 
-2\. ** Model**
+2\. **Model**
 Provide the conceptual model of your system as a UML class diagram. Represent proper cardinalities (multiplicities) for all associations. Also include the association names. 
