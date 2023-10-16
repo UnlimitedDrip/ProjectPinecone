@@ -11,3 +11,4 @@ Our web-based scheduling system, known as **Project Pinecone**, allocates itself
 2\. **Model**
 
 Provide the conceptual model of your system as a UML class diagram. Represent proper cardinalities (multiplicities) for all associations. Also include the association names. 
+![Model](/docs/Del.png)
