@@ -44,3 +44,7 @@ TJ - Aside from a more major focus on our presentation, we established my own an
 
 **Ideas Discussed:** We want to move our meeting time because meeting late on Fridays is not ideal. Discussed due date for rough prototype of our project. 
 
+### **3. Next steps**
+
+- Sergio and Aaron: Get a working database up and running. 
+- Daniel and TJ: become more familiar with ReactJS & also help with building a web page prototype
