@@ -98,21 +98,66 @@ const professors = [
         link: 'https://www.ratemyprofessors.com/professor/2903031'
     }]
 
+    const courseData = [
+        {
+            Class: 'CS 105',
+            Section: 1,
+            Instructor: "Hocking,Toby D",
+            A: 81,
+            B: 42,
+            C: 19,
+            D: 15,
+            F: 52,
+            W: 37,
+            Total: 247,
+        },
+        {
+            Class: 'CS 386',
+            Section: 1,
+            Instructor: "Chaves Steinmacher,Ana P",
+            A: 18,
+            B: 13,
+            C: 3,
+            D: 0,
+            F: 1,
+            W: 1,
+            Total: 36,
+        }]
+        
+    
+
 function Display()
 {
     let Course = document.getElementById("Course").value;
     let Last = document.getElementById("Last").value;
 
     let ProfInfo = findProfessorByLastName(Last);
+    let CourseInfo = findCourseName(Course);
 
-    document.getElementById("output").innerHTML = "<br>Instructor" + ProfInfo.firstName + " " + ProfInfo.lastName +"<br>Instructor's rating: " + ProfInfo.rating + "<br>Instructor's difficulty: " + ProfInfo.difficulty +  "<br><a href=" + ProfInfo.link + "> Proffesor's page</a>";
-
-
-
-
-
+    document.getElementById("output").innerHTML = "<br>Instructor Information: <br>Instructor: " + ProfInfo.firstName + " " + ProfInfo.lastName + "<br>Instructor's Rating: " + ProfInfo.rating + "<br>Instructor's Difficulty Rating: " + ProfInfo.difficulty + "<br><a href='" + ProfInfo.link + "'> Professor Reviews </a>";
+    document.getElementById("output1").innerHTML = "<br>Course Information:<br>Percentage of Students who passed with a 'C' or Higher: " + findCourseAverage(CourseInfo) +"% .<br>" + "Percentage of Students who withdrew: " + findCourseWithdrawalRate(CourseInfo) + "% .<br>";
 
 }
+
+function findCourseAverage(CourseInformation){
+
+    return (parseFloat((CourseInformation.A + CourseInformation.B + CourseInformation.C)/CourseInformation.Total).toFixed(2)*100);
+}
+
+function findCourseWithdrawalRate(CourseInformation){
+
+    return (parseFloat(CourseInformation.W/CourseInformation.Total).toFixed(2)*100);
+}
+
+function findCourseName(CourseNameToFind) {
+    for (let i = 0; i < courseData.length; i++) {
+        if (courseData[i].Class === CourseNameToFind) {
+            return courseData[i]; // Return the course object if found
+        }
+    }
+    return null; // Return null if the course is not found
+}
+
 
 function findProfessorByLastName(lastNameNameToFind) {
     for (let i = 0; i < professors.length; i++) {
