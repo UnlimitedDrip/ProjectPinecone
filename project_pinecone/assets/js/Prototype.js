@@ -103,21 +103,19 @@ function Display()
     let Course = document.getElementById("Course").value;
     let Last = document.getElementById("Last").value;
 
-    let ProfInfo = findProfessorByLastName(Last);
+    let ProfInfo = ObjectFinder(professors, lastName , Last);
+
+    //to be created
+    let CourseInfo = ObjectFinder(Course_list, ClassName , Course);
 
     document.getElementById("output").innerHTML = "<br>Instructor" + ProfInfo.firstName + " " + ProfInfo.lastName +"<br>Instructor's rating: " + ProfInfo.rating + "<br>Instructor's difficulty: " + ProfInfo.difficulty +  "<br><a href=" + ProfInfo.link + "> Proffesor's page</a>";
 
-
-
-
-
-
 }
 
-function findProfessorByLastName(lastNameNameToFind) {
-    for (let i = 0; i < professors.length; i++) {
-        if (professors[i].lastName === lastNameNameToFind) {
-            return professors[i]; // Return the professor object if found
+function ObjectFinder(List, variable, Data) {
+    for (let i = 0; i < List.length; i++) {
+        if (List[i].variable === Data) {
+            return List[i]; // Return the professor object if found
         }
     }
     return null; // Return null if the professor is not found
