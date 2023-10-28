@@ -35,8 +35,6 @@ Install the project by downloading everything in the "project\_pinecone" folder.
 
 ### [Break down into end to end tests](https://github.com/UnlimitedDrip/ProjectPinecone/#break-down-into-end-to-end-tests)
 
-Explain what these tests test and why
-
 test('Professor difficulty works', () => 
 {expect(display("CS 105", "Leverington").difficulty).toEqual('4.8/5');});
 
@@ -44,9 +42,10 @@ This test check if the input from the user is apropiately being matched with the
 
 ### [And coding style tests](https://github.com/UnlimitedDrip/ProjectPinecone/#and-coding-style-tests)
 
-Explain what these tests test and why
+test('Professor Rating works', () => 
+{expect(display("CS 105", "Otte").rating).toEqual('3.4/5');});
 
-    Give an example
+The reasonb behind this structure for the testing is to allow the tester to return an entire object instead of an specific part of the object to compared it with a certain value and it is also the best acommodation to test using Jest.
 
 
 ## [Deployment](https://github.com/UnlimitedDrip/ProjectPinecone/#deployment)
