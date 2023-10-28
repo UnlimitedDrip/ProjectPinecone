@@ -22,7 +22,15 @@ Install the project by downloading everything in the "project\_pinecone" folder.
 
 ## [Running the tests](https://github.com/UnlimitedDrip/ProjectPinecone/#running-the-tests)
 
-Explain how to run the automated tests for this system
+1. Installed Jest from the main website
+   
+2. Exported function Display from Prototype.js which functions as our 
+
+3. Created a .test.js file to conduct our testing
+   
+4. In the .test.js created multiple testings to check if the object from the JS is returning the right data by comparing it to the expected data
+   
+5. Run npm test -- --coverage to run the testing
 
 
 ### [Break down into end to end tests](https://github.com/UnlimitedDrip/ProjectPinecone/#break-down-into-end-to-end-tests)
