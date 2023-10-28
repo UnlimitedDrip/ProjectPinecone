@@ -51,6 +51,9 @@ Setting up of Light Deadlines: Wed, check up in Discord on current progress.
 
 ### 3. Next steps
 **Aaron** - Figure out how to fix temporary solution on web application
+
 **TJ** - Calendar File configuration
+
 **Daniel** - Update UI of the website
+
 **Sergio** - Helping out Aaron and/or TJ
