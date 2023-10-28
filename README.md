@@ -24,7 +24,7 @@ Install the project by downloading everything in the "project\_pinecone" folder.
 
 1. Installed Jest from the main website
    
-2. Exported function Display from Prototype.js which functions as our 
+2. Exported function Display from Prototype.js which functions as our main
 
 3. Created a .test.js file to conduct our testing
    
