@@ -37,8 +37,10 @@ Install the project by downloading everything in the "project\_pinecone" folder.
 
 Explain what these tests test and why
 
-    Give an example
+test('Professor difficulty works', () => 
+{expect(display("CS 105", "Leverington").difficulty).toEqual('4.8/5');});
 
+This test check if the input from the user is apropiately being matched with the object in the array using function findProfessorByLastName.
 
 ### [And coding style tests](https://github.com/UnlimitedDrip/ProjectPinecone/#and-coding-style-tests)
 
