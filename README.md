@@ -45,7 +45,7 @@ This test check if the input from the user is apropiately being matched with the
 test('Professor Rating works', () => 
 {expect(display("CS 105", "Otte").rating).toEqual('3.4/5');});
 
-The reasonb behind this structure for the testing is to allow the tester to return an entire object instead of an specific part of the object to compared it with a certain value and it is also the best acommodation to test using Jest.
+The reason behind this structure for the testing is to allow the tester to return an entire object instead of an specific part of the object to compared it with a certain value and it is also the best acommodation to test using Jest.
 
 
 ## [Deployment](https://github.com/UnlimitedDrip/ProjectPinecone/#deployment)
