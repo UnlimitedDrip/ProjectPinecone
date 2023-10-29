@@ -28,24 +28,24 @@
              <!-- Home Section -->
             <section class="home-section">
                 <div class="logo">
+                    <div class="tile">
+                        <h2>Welcome to Project Pinecone</h2>
+                        <p>Scheduling Done Easy.</p>
+                        <label for="Course">Write the course you want to check:</label><br>
+                        <input type="text" id="Course" name="Course"/><br>
+                        <label for="Last">What is the Last Name of instructor:</label><br>
+                        <input type="text" id="Last" name="Last"/><br>
+        
+                        <input type="button" onClick="Display()" Value="Enter"/>
+                          
+                    </div>
+                <div class="results-tile" id="search-results">
+                    <h4>Here is some of info that might faciliate choosing this course:</h4>
+                    <span id = "output"></span>
+                    <span id = "output1"></span>
                     
                 </div>
-                <div class="text">
-                    <h1><centre>Welcome to Project Pinecone</centre>
-                    </h1>
-                    <p>Scheduling Done Easy.</p>
                 </div>
-
-                <label for="Course">Write the course you want to check:</label><br>
-                <input type="text" id="Course" name="Course"/><br>
-                <label for="Last">What is the Last Name of instructor:</label><br>
-                <input type="text" id="Last" name="Last"/><br>
-
-                <input type="button" onClick="Display()" Value="Enter"/>
-
-                <p>Here is some of info that might faciliate choosing this course:</p>
-                <span id = "output"></span>
-                <span id = "output1"></span>
             </section>
     </body>
     </html>
