@@ -38,3 +38,14 @@ Each member reports on their activities since the last meeting. Remember that co
 
 \
 **Ideas Discussed:** Discussed deliverables assignment and filling out the about section of our website. Connect HTML Form to MySQL Database using PHP
+
+### 3. Next steps
+
+**Aaron** - Prototyping Database
+
+**TJ** - Work on export function
+
+**Daniel** - I want to integrate google calendars into the creation section of our website, I also want to gather pictures of our team members to create a more professional section that has a link to our GitHub and maybe our LinkedIn. Overall, just going to continue my focus on website design.
+
+**Sergio** - I’ll Help Aaron with the database and support anyone else who needs extra assistance.
+
