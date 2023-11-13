@@ -1,5 +1,5 @@
 **D.5 Design\
-Description**
+Description**<br>
 Our system is called Pinecone, and it is a web application that will be useful for students when enrolling in classes at the university. Pinecone is an application that is used to inform NAU students and have a more efficient and user-friendly approach to class enrollment. In an attempt to improve upon LOUIE, Pinecone has a focus on simplifying and expediting the enrollment research process, allowing students to make well-informed decisions, and ultimately helping them avoid unnecessary hardships and confusion throughout the semester. It will accomplish this by displaying professor ratings for each course in addition to class distribution data, so they can see how previous students performed in the class. It also allows students to see which courses fulfill their graduation requirements and automatically creates a calendar file for students to export into a calendar of their choosing. In summary, the structure of our system will be a web application connected to a database that pulls information from the database and Rate My Professor API to display information to the user at their request.
 
 **Architecture**![](https://lh7-us.googleusercontent.com/xdlx3JUjRGPxQtV3h2E2q7MUuuYVtJSygeC1X_Vs5xreme8tg2Zabt-orwoAwQtOOkbRCAW-5r8YtMZZ418mEPMSqRwa7QAROyBZPNo75Szbu7yLY4PLkVGIYAdaldsG4bIwHS-1Qtw4eRtc09mj9t8)
@@ -10,6 +10,6 @@ Our system is called Pinecone, and it is a web application that will be useful f
 
 **Rationale:** We added sections for the main two components (the database and the website) and how they interact with each of these components to deliver the functionality we need. In addition, each attribute has been given a type we each class know what to expect to receive at any given step.
 
-**Sequence diagram**![](https://lh7-us.googleusercontent.com/UrCJWufE5urReeZuGtZMtlCA8A9scc6tVU3nS_RS14rQk2hh7UDAIsYUyp4Kiu935HKv8EewGji1WWYLcj30G8SzEbEfleMcVO8581W-wxjYsMuoVvXdth8ZPkradyzmXK281nMnEbriFN56sb6r6A)
+**Sequence diagram**<br>![](https://lh7-us.googleusercontent.com/UrCJWufE5urReeZuGtZMtlCA8A9scc6tVU3nS_RS14rQk2hh7UDAIsYUyp4Kiu935HKv8EewGji1WWYLcj30G8SzEbEfleMcVO8581W-wxjYsMuoVvXdth8ZPkradyzmXK281nMnEbriFN56sb6r6A)
 
 Student inputs the desired Instructor’s name, which is sent to the JavaScript that runs an API to retrieve the Instructor’s information, and then this information is sent back to the JavaScript to create an object. Using the object, a string is created and passed back to the HTML for display.
