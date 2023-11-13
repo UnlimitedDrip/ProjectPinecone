@@ -5,3 +5,10 @@ Description**Our system is called Pinecone, and it is a web application that wil
 
 **Rationale:** The pinecone project consists of three main layers. Those components are the web application, the database and the code “background logic” that presents the data based on a user input to request that data. The system is designed this way to ensure modularity and scalability to multiple users. In summary, the system is modular and is secure by ensuring that users can only access the User Interface section, so they cannot break the background logic or access the database directly from it. 
 
+**Class diagram**![](https://lh7-us.googleusercontent.com/XzG-L_jw65IgE9xKUCGFPa7dA10qWzWickLc5xYCaf9y30ooajTlYkkF9xQF_4F8MvBq80Sa0z-FUJ7ORUoaqjLNJ5tWpLaD9O2s--xDApoXvA5emFm9Vu7NQT-_6m55_iyZouZ45R-y6vlEYoNRBA)
+
+**Rationale:** We added sections for the main two components (the database and the website) and how they interact with each of these components to deliver the functionality we need. In addition, each attribute has been given a type we each class know what to expect to receive at any given step.
+
+**Sequence diagram**![](https://lh7-us.googleusercontent.com/UrCJWufE5urReeZuGtZMtlCA8A9scc6tVU3nS_RS14rQk2hh7UDAIsYUyp4Kiu935HKv8EewGji1WWYLcj30G8SzEbEfleMcVO8581W-wxjYsMuoVvXdth8ZPkradyzmXK281nMnEbriFN56sb6r6A)
+
+Student inputs the desired Instructor’s name, which is sent to the JavaScript that runs an API to retrieve the Instructor’s information, and then this information is sent back to the JavaScript to create an object. Using the object, a string is created and passed back to the HTML for display.
