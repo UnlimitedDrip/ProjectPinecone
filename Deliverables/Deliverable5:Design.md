@@ -14,7 +14,7 @@ Our system is called Pinecone, and it is a web application that will be useful f
 
 Student inputs the desired Instructor’s name, which is sent to the JavaScript that runs an API to retrieve the Instructor’s information, and then this information is sent back to the JavaScript to create an object. Using the object, a string is created and passed back to the HTML for display.
 
-### **Design Patterns**![](https://lh7-us.googleusercontent.com/c32qLkmxNdYFDnZQMH9VLTVGUsrXGmDLfplj_OmfDh4CSb9Z0O8E1K3g1_PBVg2w2KbAyHpGBsWakmA0lUH4_BDt08LbAL2uFk7HfLsA1RIZ02UvgGkIZ0UHJBzBb8Ed7Mmqp_h56iPsWsptCLepkqc)
+### **Design Patterns**<br>![](https://lh7-us.googleusercontent.com/c32qLkmxNdYFDnZQMH9VLTVGUsrXGmDLfplj_OmfDh4CSb9Z0O8E1K3g1_PBVg2w2KbAyHpGBsWakmA0lUH4_BDt08LbAL2uFk7HfLsA1RIZ02UvgGkIZ0UHJBzBb8Ed7Mmqp_h56iPsWsptCLepkqc)
 Github link: <https://github.com/UnlimitedDrip/ProjectPinecone/blob/main/project_pinecone/assets/js/Prototype.js><br>
 The UML diagram above is modeled after our javascript would be closest to that of the behavioral design pattern as the main idea of the code is retrieving and displaying the correct data based on user input. While the code we use is more procedural, it still primarily is focused on user interactions and object behaviors which aligns it closest to the behavioral pattern.****![](https://lh7-us.googleusercontent.com/ktREb3CnEGClDf6zl4hc-i3NBTl4MmuQdMO5L8ov331Be-Jym-BgE77eYy-lVILtG5uK5VMHwQxphWOEakyFKI3nNUhZuthVAVcmKSLLzTaX8SY29pl1Q2y4qDO_epMfg0k4hs-wxr2onJH5DK5RTvM)****
 
