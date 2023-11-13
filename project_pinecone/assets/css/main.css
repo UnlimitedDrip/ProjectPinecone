@@ -325,3 +325,77 @@ body
     color: rgb(55, 192, 192);
     
 }
+
+/* Styles for the about section container */
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the text on the left side */
+.about-text {
+    flex: 1; /* Take up available horizontal space */
+    padding: 20px;
+}
+
+
+/* Style for the text on the right side */
+.text {
+    max-width: 20%; /* Limit the width of the text */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Styles for the team member photos on the right side */
+.team-photos .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph text on the right side */
+.paragraph-text {
+    max-width: 45%; /* Limit the width of the paragraph text */
+    padding: 125px; /* Add padding for spacing */
+}
+
+
+/* Styles for individual team member photos */
+.team-photos img {
+    max-width: 300px; /* Ensure photos don't exceed their container width */
+    max-height: 300px; /* Limit the height of each photo */
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border 0.3s ease-in-out; 
+}
+
+/* Style for the white border on hover */
+.team-photos .image-container:hover img {
+    border-color: #fff; /* Change border color to white on hover */
+    transform: scale(1.05); /* Optional: Enlarge the image on hover */
+}
+
+/* Style for the tooltip */
+.image-tooltip {
+    font-family: monospace;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the tooltip */
+    color: #fff; /* Text color for the tooltip */
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Show the tooltip when hovering over the image */
+.image-container:hover .image-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
