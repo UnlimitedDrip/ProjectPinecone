@@ -29,3 +29,14 @@ Project repo: <https://github.com/UnlimitedDrip/ProjectPinecone>
 
 \
 **Ideas Discussed:** Discussed deliverables assignment and filling out the about section of our website. Connect HTML/Javascript Form to MySQL Database using PHP
+
+### 3. Next steps
+
+**Aaron** - Start adding feature that lets you see if a class fulfills a certain requirement for degree progression. 
+
+**TJ** - Work on taking dummy data (using class diagram as a base) to create a calendar file.
+
+**Daniel** - finish up the last design layouts of the website, and than look at the remaining github issues and address them, I will then update the website accordingly to the solutions our team develops. 
+
+**Sergio** - Complete the implementation of the issue and commit to github.
+
