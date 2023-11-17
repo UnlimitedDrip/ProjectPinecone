@@ -16,3 +16,15 @@ Project repo: <https://github.com/UnlimitedDrip/ProjectPinecone>
 **Daniel -** my plans this week with the website being mostly complete was to just go back and fix any visual or interface bugs that were present in the system. An example of this being the tiles I created in our information section of the homepage not adapting based on the amount of text that is present in the tile at the moment. 
 
 **Sergio -** Created the database in Mysql with two tables one containing comments for the professors and the other one containing the data information for the class data.
+
+**2. Project retrospective**
+
+**Retrospective:** We were all really busy but we feel like were on track.
+
+1. **Appreciations:** N/A
+2. **Successes:** N/A
+3. **Failures:** Some degree of burnout
+4. **Barriers:** Lack of free time for most team members.
+5. **What we should try next time:** N/A
+
+**Ideas Discussed:** None
