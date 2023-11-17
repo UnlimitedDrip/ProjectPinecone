@@ -28,3 +28,13 @@ Project repo: <https://github.com/UnlimitedDrip/ProjectPinecone>
 5. **What we should try next time:** N/A
 
 **Ideas Discussed:** None
+
+### 3. Next steps
+
+**Aaron** - Start commenting code out and implement php stuff for ease of use when connecting the SQL database.
+
+**TJ** - Be prepared to push website update for deliverable video, Complete at least the first couple of tasks listed before Sunday
+
+**Daniel** - Continue to fix and adjust the website where need be, may also look into trying to scale the website to work on mobile devices as it may not be fitted correctly. We still need to fix the calendar section of our web page which I will work with the team on to implement. 
+
+**Sergio** - PHP code to connect the database
