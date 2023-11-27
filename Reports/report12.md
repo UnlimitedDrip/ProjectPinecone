@@ -30,3 +30,12 @@ Project repo: <https://github.com/UnlimitedDrip/ProjectPinecone>
 **Ideas Discussed: Implementing FLASK instead of Django**
 
 ****
+### 3. Next steps
+
+**Aaron** — I will add Django to the GitHub and our web application to hopefully facilitate an easier integration with MySQL.
+
+**TJ** - I was initially assigned the final set of steps to combine all the work of my teammates to make all functionality work together, I’m realizing now that this task is more overwhelming than I initially thought it’d be. Nonetheless, I will still do my best to finish what I can
+
+**Daniel** - My plan at this point is to prepare to deploy our product while also working alongside my teammates to help them complete whatever tasks they have left, and also wrap up the calendar section of our project and assist however I can with the website design. 
+
+**Sergio** - I will help the other team members with anything they need, especially Aaron, with the implementation of Django in our project.
