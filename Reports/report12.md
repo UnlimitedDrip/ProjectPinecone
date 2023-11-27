@@ -29,7 +29,6 @@ Project repo: <https://github.com/UnlimitedDrip/ProjectPinecone>
 
 **Ideas Discussed: Implementing FLASK instead of Django**
 
-****
 ### 3. Next steps
 
 **Aaron** — I will add Django to the GitHub and our web application to hopefully facilitate an easier integration with MySQL.
