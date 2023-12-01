@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<nav class="w3-bar w3-black">
+    <span class="navbar-title">
+        <span class="navbar-logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Project Pinecone">
+        </span>        
+        Project Pinecone
+    </span>
+    <a href="{{ url_for('home') }}" class="w3-button w3-bar-item">Home</a>
+    <a href="{{ url_for('create') }}" class="w3-button w3-bar-item">Create</a>
+    <a href="{{ url_for('about') }}" class="w3-button w3-bar-item">About</a>
+</nav>
+
+       <!-- About Section -->
+       <section class="about-section">
+        <div class="text">
+            <!-- Your text content goes here -->
+            <h2>About Our Project</h2>
+            <p>This project is currently under development by our wonderful team members Aaron Santiago, Sergio Rabadan, Thomas Rhode, and Daniel Minichetti.</p>
+        </div>
+        <div class="team-photos">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/daniel.png') }}" alt="Team Member 1">
+                <div class="image-tooltip">Daniel</div>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/aaron.png') }}" alt="Team Member 2">
+
+                <div class="image-tooltip">Aaron</div>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/eeffoc.jpeg') }}" alt="Team Member 3">
+                <div class="image-tooltip">Sergio</div>
+            </div>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='images/eeffoc.jpeg') }}" alt="Team Member 4">
+
+                <div class="image-tooltip">TJ</div>
+            </div>
+         </div>
+        <div class="paragraph-text">
+            <!-- Paragraph text content goes here -->
+            <p>Welcome to Pinecone, your go-to platform for managing and creating calendars. Our mission is to simplify your scheduling and organization by providing intuitive tools and features.
+
+            </p>
+        </div>
+    </section>
+</head>
+</html>
