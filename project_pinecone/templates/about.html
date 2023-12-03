@@ -1,16 +1,19 @@
 <!DOCTYPE html>
     <html>
         <head>
-<link rel = "stylesheet" href = "assets/css/main.css" />
+            <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
 <nav class="w3-bar w3-black">
     <span class="navbar-title">
-        <img src="images/logo.png" alt="Logo" class="navbar-logo">
+        <span class="navbar-logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Project Pinecone">
+        </span>        
         Project Pinecone
     </span>
-    <a href="index.html" class="w3-button w3-bar-item">Home</a>
-    <a href="create.html" class="w3-button w3-bar-item">Create</a>
-    <a href="about.html" class="w3-button w3-bar-item">About</a>
+    <a href="{{ url_for('home') }}" class="w3-button w3-bar-item">Home</a>
+    <a href="{{ url_for('create') }}" class="w3-button w3-bar-item">Create</a>
+    <a href="{{ url_for('about') }}" class="w3-button w3-bar-item">About</a>
 </nav>
 
        <!-- About Section -->
@@ -22,19 +25,21 @@
         </div>
         <div class="team-photos">
             <div class="image-container">
-                <img src="images/daniel.png" alt="Team Member 1">
+                <img src="{{ url_for('static', filename='images/daniel.png') }}" alt="Team Member 1">
                 <div class="image-tooltip">Daniel</div>
             </div>
             <div class="image-container">
-                <img src="images/aaron.png" alt="Team Member 2">
+                <img src="{{ url_for('static', filename='images/aaron.png') }}" alt="Team Member 2">
+
                 <div class="image-tooltip">Aaron</div>
             </div>
             <div class="image-container">
-                <img src="images/eeffoc.jpeg" alt="Team Member 3">
+                <img src="{{ url_for('static', filename='images/eeffoc.jpeg') }}" alt="Team Member 3">
                 <div class="image-tooltip">Sergio</div>
             </div>
             <div class="image-container">
-                <img src="images/eeffoc.jpeg" alt="Team Member 4">
+                <img src="{{ url_for('static', filename='images/eeffoc.jpeg') }}" alt="Team Member 4">
+
                 <div class="image-tooltip">TJ</div>
             </div>
          </div>

@@ -1,14 +1,16 @@
  
-    <link rel = "stylesheet" href = "assets/css/main.css" />
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+            <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
         <span class="navbar-title">
-            <img src="images/logo.png" alt="Logo" class="navbar-logo">
-            Project Pinecone
+            <span class="navbar-logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Project Pinecone">
+            </span>                    Project Pinecone
         </span>
-        <a href="index.html" class="w3-button w3-bar-item">Home</a>
-        <a href="create.html" class="w3-button w3-bar-item">Create</a>
-        <a href="about.html" class="w3-button w3-bar-item">About</a>
+        <a href="{{ url_for('home') }}" class="w3-button w3-bar-item">Home</a>
+        <a href="{{ url_for('create') }}" class="w3-button w3-bar-item">Create</a>
+        <a href="{{ url_for('about') }}" class="w3-button w3-bar-item">About</a>
     </nav>
 
     <!-- Create Section -->
