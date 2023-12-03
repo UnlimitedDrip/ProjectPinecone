@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript iCalendar Test</title>
+</head>
+<body>
+
+<!-- Include your JavaScript file -->
+<script src="assets/js/Prototype.js"></script>
+
+<script>
+  // Test your code here
+  const additionalEvents = [
+    {
+      summary: 'Meeting with Client',
+      description: 'Discuss project updates',
+      start: new Date('2023-12-01T10:00:00Z'),
+      end: new Date('2023-12-01T11:00:00Z'),
+    },
+    // Add more events as needed
+  ];
+  
+    //adds events seen in HTML file to any existing in JS file
+    const allEvents = events.concat(additionalEvents);
+
+    allIcsContent = createICS(allEvents);
+
+      // Create a Blob with the iCalendar content
+const blob = new Blob([allIcsContent], { type: 'text/calendar' });
+
+// Create a link element
+const link = document.createElement('a');
+
+// Set the download attribute and the file name
+link.download = 'calendar.ics';
+
+// Create a URL for the Blob and set it as the link's href
+link.href = URL.createObjectURL(blob);
+
+// Append the link to the document body
+document.body.appendChild(link);
+
+// Trigger a click on the link to start the download
+link.click();
+
+// Remove the link from the document body
+document.body.removeChild(link);
+
+  // Output the generated iCalendar content to the console
+  console.log(allIcsContent);
+</script>
+
+</body>
+</html>
