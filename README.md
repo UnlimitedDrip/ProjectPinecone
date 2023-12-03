@@ -12,12 +12,18 @@ Once you have the files downloaded, you can see a local version of the website b
 
 ### [Prerequisites](https://github.com/UnlimitedDrip/ProjectPinecone/#prerequisites)
 
-None
-
+- Flask
+- Python
 
 ### [Installing](https://github.com/UnlimitedDrip/ProjectPinecone/#installing)
 
-Install the project by downloading everything in the "project\_pinecone" folder.
+Install the project by downloading our latest release, then extract the zip into a folder.
+
+Install pip and python if you havent already. 
+
+Install Flask by running "pip install flask" in your terminal.
+
+To run the program, traverse to the directory titled "project_pinecone" then use your terminal to execute "python run.py". If everything was installed correctly you should be able to access the project using the address given to you.
 
 
 ## [Running the tests](https://github.com/UnlimitedDrip/ProjectPinecone/#running-the-tests)
