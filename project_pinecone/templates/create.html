@@ -1,0 +1,42 @@
+ 
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+            <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+        <span class="navbar-title">
+            <span class="navbar-logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Project Pinecone">
+            </span>                    Project Pinecone
+        </span>
+        <a href="{{ url_for('home') }}" class="w3-button w3-bar-item">Home</a>
+        <a href="{{ url_for('create') }}" class="w3-button w3-bar-item">Create</a>
+        <a href="{{ url_for('about') }}" class="w3-button w3-bar-item">About</a>
+    </nav>
+
+    <!-- Create Section -->
+    <section class="create-section">
+        <div class="create-content">
+            <script src="assets/js/calendarFileInput.js"></script>
+            <h1>Create Your Calendar</h1>
+    
+    <!-- Calendar Display -->
+        <div id="calendar"></div>
+
+    <!-- Buttons for Importing Data -->
+        <div class="import-buttons">
+            <button id="import-from-file">Import from File</button>
+        </div>
+
+        <input type="file" id="calendarFileInput" style="display: none;" accept=".ics">
+
+    <!-- Button to Export Data to ics file--> 
+        <div class="import-buttons">
+           <button id="export-to-ics">Export as .ics File </button>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/calendarFileInput.js"></script>
+
+
