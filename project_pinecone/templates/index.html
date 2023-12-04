@@ -34,7 +34,7 @@
                 <h1>Professor and Course Information</h1>
 
                 <form action="{{ url_for('display_route') }}" method="post">
-                    <label for="Course">Enter the course:</label>
+                    <label for="Course">Enter the course acronym (ex. "CS 386"):</label>
                     <input type="text" id="Course" name="Course" required>
                                     
                     <label for="Last">Enter the professor's last name:</label>
@@ -48,13 +48,12 @@
     </section>
     <div class="tile-container">
         <div class="results-tile" id="search-results">
-            <h4>Here is some of info that might faciliate choosing this course:</h4>
+            <h2>Professor Information:</h2>
             <!-- Display the result if available -->
             {% if result %}
             <div class="output">
                 <br>
-                <p>Instructor Information:</p>
-                <p>Instructor: {{result[1].firstName}} {{result[1].lastname}}</p>
+                <p>Instructor: {{result[1].firstName}} {{result[1].lastName}}</p>
                 <p>Instructor's Rating: {{result[1].rating}}</p>
                 <p>Instructor's Difficulty Rating: {{result[1].difficulty}}</p>
                 <a href={{result[1].link}}> Professor Reviews </a>
@@ -69,14 +68,14 @@
         
         <div class="tile2" id="search-results">
             <br><br>
-            <h2>other info:</h2>
+            <h2>Class Information:</h2>
             <!-- Adjust this part to display your result data -->
             {% if result %}
             <div class="output1">
                 <br><br>
-                <p>Course Information: <br>Percentage of Students who passed with a 'C' or Higher: {{result[3]}}%.</p>
+                <p>Passing Rate: <br>Percentage of Students who passed with a 'C' or Higher: {{result[3]}}%.</p>
                 <p>Percentage of Students who withdrew: {{result[4]}}%.</p> <br>
-                <p>Course Difficulty:<br>{{result[5]}}</p>
+                <p>Difficulty:<br>{{result[5]}}</p>
             </div>
             {% endif %}
         </div>
