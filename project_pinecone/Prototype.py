@@ -1,4 +1,6 @@
 #Prototype.py
+from datetime import datetime
+
 professors = [
     {
         "firstName": 'Ashish',
@@ -94,3 +96,55 @@ def find_professor_by_last_name(last_name_to_find):
             return prof
     return None
 
+#TJ export code calendar function
+from datetime import datetime
+
+def create_ics(events):
+    calendar_lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'CALSCALE',
+    ]
+
+    for event in events:
+        event_body = [
+            f'BEGIN:VEVENT',
+            f'SUMMARY:{event["summary"]}',
+            f'DESCRIPTION:{event.get("description", "")}',
+            f'DTSTART:{format_date(event["start"])}',
+            f'DTEND:{format_date(event["end"])}',
+            'END:VEVENT'
+        ]
+
+        calendar_lines.extend(event_body)
+
+    calendar_lines.append('END:VCALENDAR')
+
+    return '\n'.join(calendar_lines)
+
+def format_date(date):
+    pad = lambda n: '0' + str(n) if n < 10 else str(n)
+
+    year = date.year
+    month = pad(date.month)
+    day = pad(date.day)
+    hours = pad(date.hour)
+    minutes = pad(date.minute)
+    seconds = '00'
+
+    return f'{year}{month}{day}T{hours}{minutes}{seconds}Z'
+
+if __name__ == "__main__":
+    # Example data
+    events = [
+        {
+            'summary': 'CS 316',
+            'description': 'Location: college of business',
+            'start': datetime.strptime('2023-12-01T11:00:00Z', '%Y-%m-%dT%H:%M:%SZ'),
+            'end': datetime.strptime('2023-12-01T12:00:00Z', '%Y-%m-%dT%H:%M:%SZ'),
+        },
+    ]
+
+    ics_content = create_ics(events)
+
+    print(ics_content)
