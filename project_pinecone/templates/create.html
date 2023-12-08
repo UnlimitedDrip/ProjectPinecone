@@ -1,4 +1,6 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
             <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
             <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <!-- Navigation -->
@@ -11,12 +13,15 @@
         <a href="{{ url_for('home') }}" class="w3-button w3-bar-item">Home</a>
         <a href="{{ url_for('create') }}" class="w3-button w3-bar-item">Create</a>
         <a href="{{ url_for('about') }}" class="w3-button w3-bar-item">About</a>
+        <script src="/static/js/calendarFileInput.js"></script>
+        <script src="/static/js/Prototype.js"></script>
     </nav>
+</head>
 
+<body>
     <!-- Create Section -->
     <section class="create-section">
         <div class="create-content">
-            <script src="assets/js/calendarFileInput.js"></script>
             <h1>Create Your Calendar</h1>
     
     <!-- Calendar Display -->
@@ -30,13 +35,56 @@
         <input type="file" id="calendarFileInput" style="display: none;" accept=".ics">
 
     <!-- Button to Export Data to ics file--> 
-        <div class="import-buttons">
-           <button id="export-to-ics">Export as .ics File </button>
-        </div>
+    <div class="import-buttons">
+        <button id="export-to-ics">Export as .ics File </button>
+     </div>
+
+     <script>
+         // Function for download itself
+         function downloadICS(){
+             const additionalEvents = [
+             {
+                 summary: 'CS 316',
+                 description: 'Discuss project updates',
+                 start: new Date('2023-12-01T10:00:00Z'),
+                 end: new Date('2023-12-01T11:00:00Z'),
+             },
+         // Add more events as needed
+         ];
+
+         
+         //adds events seen in HTML file to any existing in JS file
+         const allEvents = events.concat(additionalEvents);
+
+         allIcsContent = createICS(allEvents);
+
+         // Create a Blob with the iCalendar content
+         const blob = new Blob([allIcsContent], { type: 'text/calendar' });
+
+         // Create a link element
+         const link = document.createElement('a');
+
+         // Set the download attribute and the file name
+         link.download = 'calendar.ics';
+
+         // Create a URL for the Blob and set it as the link's href
+         link.href = URL.createObjectURL(blob);
+
+         // Append the link to the document body
+         document.body.appendChild(link);
+
+         // Trigger a click on the link to start the download
+         link.click();
+
+         // Remove the link from the document body
+         document.body.removeChild(link);
+         }
+
+         const downloadButton = document.getElementById('export-to-ics');
+         downloadButton.addEventListener('click', downloadICS);
+     </script>
 
     </div>
 </section>
-
-<script src="assets/js/calendarFileInput.js"></script>
-
+</body>
 

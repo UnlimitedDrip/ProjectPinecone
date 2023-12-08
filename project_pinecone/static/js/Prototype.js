@@ -553,3 +553,62 @@ function findProfessorByLastName(lastNameNameToFind) {
     }
     return null; // Return null if the professor is not found
 }
+
+//TJ Code
+
+function createICS(events) {
+    const calendarLines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'CALSCALE',
+    ];
+
+    events.forEach((event) => {
+        const eventBody = [
+            `BEGIN:VEVENT`,
+            `SUMMARY:${event.summary}`,
+            `DESCRIPTION:${event.description || ''}`,
+            `DTSTART:${formatDate(event.start)}`,
+            `DTEND${formatDate(event.end)}`,
+            `END:VEVENT`
+        ];
+
+        calendarLines.push(...eventBody);
+
+
+    });
+    calendarLines.push('END:VCALENDAR');
+
+    return calendarLines.join('\n')
+}
+
+function formatDate(date) {
+    //uses format YEAR(4DIGITS),MONTH(2DIGITS),DAY(2DIGITS),LETTERT,HOURS(2DIGITS),MINUTES(2DIGITS),SECONDS(2DIGITS),LETTERZ
+    //YYYYMMDDTHHMMSSZ
+
+    //adds a zero in front of any 2 digit number less than 10
+    const pad = (n) => (n < 10 ? '0' + n : n)
+
+    const year = date.getUTCFullYear();
+    const month = pad(date.getUTCMonth() +1 );
+    const day = pad(date.getUTCDate());
+    const hours = pad(date.getUTCHours());
+    const minutes = pad(date.getUTCMinutes());
+    const seconds = '00'; //pad(date.getUTCSeconds());
+
+    return `${year}${month}${day}T${hours}${minutes}00Z`;
+}
+
+//example data
+const events = [
+    {
+        summary: 'EXAMPLE TEMPLATE FROM JS FILE',
+        description: 'Location: college of business',
+        start: new Date('2023-12-01T11:00:00Z'),
+        end: new Date('2023-12-01T11:00:00Z'),
+    },
+];
+
+const icsContent = createICS(events);
+
+console.log(icsContent); 
