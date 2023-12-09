@@ -1,67 +1,55 @@
-#Prototype.py
-professors = [
-    {
-        "firstName": 'Ashish',
-        "lastName": 'Amresh',
-        "rating": '2.6/5',
-        "difficulty": '1.9/5',
-        "link": 'https://www.ratemyprofessors.com/professor/1356382',
-        "comment1": "Overall he didn't do anything during the semester so far other than use other professor's material to 'teach' the course. Be prepared to figure everything out on your own. The videos he uses are generic, outdated, and most likely won't pertain to the OS you are running.",
-        "comment2": "Barely taught. Just gave specific lessons from book. Cares more about research than teaching.",
-        "comment3": "The video lectures are pretty good quality, the instructor in the videos is well qualified and speaks clearly. the coursework is moderate but not very difficult. Amresh was very responsive and I generally found this to be one of the better parts of the BSE program at ASU."
-    },
-    {
-        "firstName": 'Paul',
-        "lastName": 'Bakke',
-        "rating": '3.4/5',
-        "difficulty": '2.5/5',
-        "link": 'https://www.ratemyprofessors.com/professor/2678904',
-        "comment1": "Most of the stuff is going to be learned by doing the coding itself and his lectures are quite boring. You also don't know what grade you're actually going to get until near the end of the semester. I was thinking I ended the semester at a B- when I calculated it myself but ended with an A. If you put even 2 hours a week of effort you'll do fine.",
-        "comment2": "He was very nice but he stopped teaching about a month after school had started. I started to not understand what was going on in the class. Showing up felt like it was useless after that; he posted his lectures online and everything was online. The lab was horrible though, very hard.",
-        "comment3": "I felt like his lectures were there just to be there. Most of the learning is done on your own with the homework. He understands students are busy and provides very flexible hours which are very much appreciated. He is also always super helpful. The most unhelpful thing he's done was provide a required textbook. You will never touch it."
-    }
-]
+import mysql.connector
+from mysql.connector import errorcode
+from config import Config
 
-course_data = [
-    {
-        "Class": "CS 105",
-        "Section": 1,
-        "Instructor": "Hocking,Toby D",
-        "A": 81,
-        "B": 42,
-        "C": 19,
-        "D": 15,
-        "F": 52,
-        "W": 37,
-        "Total": 247
-    }
-]
+#Prototype.py
+class ClassData:
+    def __init__(self, class_name, section, instructor_last, instructor_first, A, B, C, D, F, W, total):
+        self.class_name = class_name
+        self.section = section
+        self.instructor_last = instructor_last
+        self.instructor_first = instructor_first
+        self.A = A
+        self.B = B
+        self.C = C
+        self.D = D
+        self.F = F
+        self.W = W
+        self.total = total
+
+class InstructorInfo:
+    def __init__(self, first_name, last_name, rating, difficulty, link, comment1, comment2, comment3):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.rating = rating
+        self.difficulty = difficulty
+        self.link = link
+        self.comment1 = comment1
+        self.comment2 = comment2
+        self.comment3 = comment3
 
 def display(course, last_name):
     # array for comments
-    comm_arr = [None, None, None]
+    #comm_arr = [None, None, None]
+    db_connection = create_database_connection()
 
-    prof_info = find_professor_by_last_name(last_name)
-    course_info = find_course_name(course)
+    prof_info = fetch_instructor_info_by_last_name(last_name, db_connection)
+    course_info = fetch_class_data_by_class_name(course, db_connection)
+
+    db_connection.close()
+
+    #prof_info = find_professor_by_last_name(last_name)
+    #course_info = find_course_name(course)
 
     if prof_info and course_info:
         # get comments
-        comm_arr = get_prof_comments(prof_info, comm_arr)
+        #comm_arr = get_prof_comments(prof_info, comm_arr)
 
-        result = [comm_arr, prof_info, course_info, find_course_average(course_info), find_course_withdrawal_rate(course_info), find_course_diff(course_info)]
-        #passing an array with all the info inside index 0: comments, 1: Instructor's info, 2: Course info, 3: average, 4: course withdrawal, 5:course diff
+
+        result = [prof_info, course_info, find_course_average(course_info), find_course_withdrawal_rate(course_info), find_course_diff(course_info)]
         return result 
     else:
         return {"error": "Professor or course not found."}
-
-
-def get_prof_comments(prof_info, comm_arr):
-    if prof_info:
-        comm_arr[0] = prof_info.get("comment1", "")
-        comm_arr[1] = prof_info.get("comment2", "")
-        comm_arr[2] = prof_info.get("comment3", "")
-
-    return comm_arr
 
 
 def find_course_diff(course_info):
@@ -74,23 +62,83 @@ def find_course_diff(course_info):
 
 
 def find_course_average(course_info):
-    return round(((course_info["A"] + course_info["B"] + course_info["C"]) / course_info["Total"]) * 100, 2)
+    # sets variables to 0
+    total_students = 0
+    ABC_Val = 0
+    #iterates through the whole list of objects 
+    for index in range(0, len(course_info)):
+        #adds A's, B's and C's to a variable from each index of the list of objects and also adds the number of students to another variable
+        total_students += course_info[index].total
+        ABC_Val = ABC_Val + (course_info[index].A + course_info[index].B + course_info[index].C)
+    #retusn the number of students that passed with A's, B's, C's divided by the total number of sutndets who took this class * 100
+    return round((ABC_Val / total_students) * 100, 2)
 
 
 def find_course_withdrawal_rate(course_info):
-    return round((course_info["W"] / course_info["Total"]) * 100, 2)
+    #sets variables to 0
+    withdrawals = 0
+    TotalS = 0
+    #iterates through the whole list adding Withdrawls and the total number of students in each class form the object
+    for index in range(0, len(course_info)):
+        TotalS += course_info[index].total
+        withdrawals += course_info[index].W
+    # returns the # of withdrawls/Total # of students * 100
+    return round((withdrawals/TotalS) * 100, 2)
 
 
-def find_course_name(course_name_to_find):
-    for course in course_data:
-        if course["Class"] == course_name_to_find:
-            return course
-    return None
+    
+def create_database_connection():
+    #Connets to data base
+    connection = mysql.connector.connect(**Config.dbinfo())
+    return connection
 
+def fetch_instructor_info_by_last_name(last_name, connection):
+    cursor = connection.cursor(dictionary=True)
+    query = "SELECT * FROM InstructorInfo WHERE lastName = %s"
+    cursor.execute(query, (last_name,))
+    result = cursor.fetchone()  # gets a single row
+    cursor.close()
 
-def find_professor_by_last_name(last_name_to_find):
-    for prof in professors:
-        if prof["lastName"] == last_name_to_find:
-            return prof
-    return None
+    # If a result is found, create an InstructorInfo object
+    if result:
+        return InstructorInfo(
+            result["firstName"],
+            result["lastName"],
+            result["rating"],
+            result["difficulty"],
+            result["link"],
+            result["Comment1"],
+            result["Comment2"],
+            result["Comment3"]
+        )
+    else:
+        return None
 
+def fetch_class_data_by_class_name(class_name, connection):
+    cursor = connection.cursor(dictionary=True)
+    query = "SELECT * FROM ClassData WHERE Class = %s"
+    cursor.execute(query, (class_name,))
+    results = cursor.fetchall()  # Use fetchall() to get all rows as a list of dictionaries
+    cursor.close()
+    #creates a list for a list of objects
+    class_data_list = []
+
+    for result in results:
+        class_data = ClassData(
+            result["Class"],
+            result["Section"],
+            result["InstructorLast"],   
+            result["InstructorFirst"],  
+            result["A"],
+            result["B"],
+            result["C"],
+            result["D"],
+            result["F"],
+            result["W"],
+            result["Total"]
+        )
+        #appends the newly created object to the list of objects
+        class_data_list.append(class_data)
+
+    #returns a list of objects
+    return class_data_list

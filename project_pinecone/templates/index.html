@@ -31,10 +31,10 @@
     <section class="home-section">
         <div class="logo">
             <div class="tile">
-                <h1>Professor and Course Information</h1>
+                <h1>Professor and Course Information</h1> <br>
 
                 <form action="{{ url_for('display_route') }}" method="post">
-                    <label for="Course">Enter the course acronym (ex. "CS 386"):</label>
+                    <label for="Course">Enter the course acronym <br> (ex. "CS 386"):</label>
                     <input type="text" id="Course" name="Course" required>
                                     
                     <label for="Last">Enter the professor's last name:</label>
@@ -53,15 +53,15 @@
             {% if result %}
             <div class="output">
                 <br>
-                <p>Instructor: {{result[1].firstName}} {{result[1].lastName}}</p>
-                <p>Instructor's Rating: {{result[1].rating}}</p>
-                <p>Instructor's Difficulty Rating: {{result[1].difficulty}}</p>
-                <a href={{result[1].link}}> Professor Reviews </a>
-                <p>Professor's Top 3 Most Recent Comments:</p>
-                {% for i in range(0,3) %}
-                    
-                    <p><br>{{ result[0][i] }}</p>
-                {% endfor %}
+                <p>Instructor: {{result[0].first_name}} {{result[0].last_name}}</p>
+                <p>Instructor's Rating: {{result[0].rating}}</p>
+                <p>Instructor's Difficulty Rating: {{result[0].difficulty}}</p>
+                <a href={{result[0].link}}> Professor Reviews </a>
+                <p>Professor's Top 3 Most Recent Comments:</p><br>
+                <p>Comment 1: {{result[0].comment1}}</p><br>
+                <p>Comment 2: {{result[0].comment2}}</p><br>
+                <p>Comment 3: {{result[0].comment3}}</p>
+
             </div>
             {% endif %}
         </div>
@@ -73,9 +73,9 @@
             {% if result %}
             <div class="output1">
                 <br><br>
-                <p>Passing Rate: <br>Percentage of Students who passed with a 'C' or Higher: {{result[3]}}%.</p>
-                <p>Percentage of Students who withdrew: {{result[4]}}%.</p> <br>
-                <p>Difficulty:<br>{{result[5]}}</p>
+                <p>Passing Rate: <br>Percentage of Students who passed with a 'C' or Higher: {{result[2]}}%.</p>
+                <p>Percentage of Students who withdrew: {{result[3]}}%.</p> <br>
+                <p>Difficulty:<br>{{result[4]}}</p>
             </div>
             {% endif %}
         </div>
