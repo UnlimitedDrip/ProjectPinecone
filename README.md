@@ -85,5 +85,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 - Rate My Professor
 - LOUIE
-- Python Testing
-- 
+- ayoo
